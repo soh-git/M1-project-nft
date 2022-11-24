@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>another annoying nft website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href=" https://assets.css-tricks.ir/font/font.css">
+
+
+</head>
+
+<body>
+    <nav>
+        <a href="#"><i class="fa-solid fa-house"></i> home</a>
+        <a href="#/explore"><i class="fa-solid fa-list"></i> explorer</a>
+        <a href="#/favorite"><i class="fa-regular fa-star"></i> favoris</a>
+        <a href="#/banned"><i class="fa-solid fa-ban"></i> banned</a>
+    </nav>
+    <section id="view" class="view">
+        <section id="home" class="fragment">
+            <div class="o"><img src="img/nft2.png" alt=""></div>
+
+            <div class="container">
+                <h3 class="title">explorer </h3>
+                <div id="cardsExplo" class="cards">
+
+                </div>
+                <div class="txtac">
+
+                    <a href="#/explore" class="btnPlus"> voir plus</a>
+                </div>
+            </div>
+
+
+
+        </section>
+        <section id="explore" class="fragment">
+
+            <div class="container">
+                <h1 class="title"> tout les nfts</h1>
+                <p class="txtac cw"> trier par: </p>
+                <div class="sortComponent">
+                    <a class=" btnPlus" id="btnResetSort"> réinitialiser</a>
+                    <a class=" btnPlus" id="SortSale"> ventes</a>
+                    <a class=" btnPlus" href="#/creators/"> créateurs </a>
+                    <a class=" btnPlus" href="#/favorite"> favoris </a>
+
+                    <div class="">
+
+                        <input id="querySearch" type="text" placeholder="rechercher un nft">
+                        <a id="btnSearch" class="btnPlus"> <i class="fa-solid fa-magnifying-glass"></i></a>
+                    </div>
+
+
+                </div>
+
+                <div id="cardsNft" class="cards">
+
+                </div>
+            </div>
+
+
+        </section>
+        <section id="creator" class="fragment">
+            <h3 class="tle">Tout les artistes </h3>
+            <div class="container">
+                <div id="cardsCreator" class="cards">
+
+                </div>
+            </div>
+
+        </section>
+        <section id="favorite" class="fragment">
+            <div class="container">
+                <h3 class="tle">Tout les Favoris </h3>
+                <div id="cardsNftFav" class="cards">
+
+                </div>
+            </div>
+
+
+
+        </section>
+        <section id="banned" class="fragment">
+            <div class="container">
+                <h3 class="tle">Tout les nfts bloqués</h3>
+                <div id="creatorNftBanned" class="cards">
+
+                </div>
+                <div id="cardsNftBanned" class="cards">
+
+                </div>
+            </div>
+
+
+        </section>
+        <section id="product" class="fragment">
+            <div class="container" id="articleNft">
+
+            </div>
+
+        </section>
+        <section id="notFound" class="fragment">
+
+            <p> Page Introuvable. </p>
+        </section>
+
+    </section>
+
+    <footer>
+        &copy 2022 nft
+    </footer>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
