@@ -57,6 +57,8 @@ async function home() {
 
     resetCards()
     let nftsExplo = await getRandomNft()
+    nftsExplo=nftsExplo.filter(nft=> !nft.ban)
+
     nftsExplo.forEach(nft => {
         cardsExplo.appendChild(createNftCard(nft))
     })
@@ -173,7 +175,7 @@ async function creator() {
     if (!creator) {
         CREATOR.style.display = 'block'
 
-        Object.values(creators).forEach(creator => {
+        Object.values(creators).sort((a,b)=> a.username.localeCompare(b.username)).forEach(creator => {
             let card = createCreatorCard(creator)
             cardsCreator.appendChild(card)
 
